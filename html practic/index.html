@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>my website</h1>
+    <p>gdyuvfrvgjuetbujnoiuwdyvjobrjwwgcchjbirg</p>
+    <script src="myJs.js"></script>
+    <a href="https://www.hotstar.com/in/sports/cricket#w-DialogWidget"> click me
+    <div>
+        <a href="section1">home</a>
+        <a href="section2">about</a>
+        <a href="section3">Form</a>
+
+
+    </div>
+    <div>
+        <h1 id="section1">goHome</h1>
+        <p>
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. Voluptas 
+            recusandae pariatur quibusdam magnam harum non corporis a
+            ssumenda facere dolore minima, voluptatum ratione velit? In 
+            soluta, tempora earum veritatis, et, voluptates repellat vero r
+            epellendus omnis nulla rerum. Minus, eius possimus quod rem ab impedit 
+            magni minima officiis temporibus unde inventore pariatur assumenda doloribus 
+            sint voluptatibus consequuntur placeat perferendis praesentium quisquam. Culpa,
+            numquam doloremque. Cumque ut numquam excepturi? Accusantium quia ducimus temporibus, fuga voluptatibus soluta impedit odio beatae laborum, nesciunt quas voluptatum! Eveniet sunt ab enim veritatis rem praesentium, possimus unde aspernatur? Rem ex corporis dolorem nostrum dolores nobis commodi, odio quibusdam maiores natus possimus sequi! Dolore eum repellendus ab. Esse nobis delectus nihil eum reprehenderit natus ea consectetur fuga maxime, error eveniet commodi assumenda cum in aspernatur labore impedit optio rerum hic blanditiis pariatur sunt? Laudantium esse nisi magnam, eaque rerum mollitia distinctio beatae! Officiis quidem aliquid nihil vitae fugiat, amet dicta a molestias impedit facere modi error ratione architecto esse quam. Nam accusamus illum dolores alias pariatur totam expedita consectetur beatae fugiat hic, optio officiis exercitationem est harum ipsam quae quisquam, et animi autem ducimus doloribus cum omnis voluptate. Aliquam autem necessitatibus commodi deleniti eveniet. Praesentium deserunt reprehenderit voluptate quam assumenda est veritatis officiis, magnam aliquam perspiciatis voluptatibus iusto minus illo rerum iure quod nesciunt doloribus adipisci. Voluptatibus dolorum esse tempore asperiores nihil sequi, dolores itaque ullam molestiae maxime qui ipsam laborum nam vel modi accusantium rem animi id odit nemo exercitationem. Iste iure corrupti asperiores! Ipsam beatae minima quam quasi iste iure officia et, accusantium dignissimos commodi qui quas quisquam, nam inventore numquam natus dolor eum dolorem dolores atque totam fugiat itaque aliquid? Sed dolor laborum voluptatem in deleniti vel exercitationem quam veniam enim ratione molestias voluptates provident molestiae, eaque explicabo corporis quae ullam labore illum et? Similique laboriosam dolorum sit itaque, velit consequatur quis minus illum rem necessitatibus magni ullam repellat earum totam esse cumque, magnam at excepturi atque odio. Ea perspiciatis quasi voluptates sit iure id error delectus quos aperiam placeat animi sed pariatur doloribus aliquid numquam esse officiis odio, ipsum vel? Dignissimos, molestias. Quia, illum et mollitia natus eos non tenetur aut. Ex, sequi. Velit libero cumque sit dignissimos, provident optio nemo accusamus? Recusandae, perspiciatis odit nihil quasi fugit quisquam rem! Maiores, ipsum voluptatum officiis ab dolore quidem expedita unde dolorum commodi sed? Voluptate repellat, quae tempore ex ratione dicta perferendis nemo, eaque distinctio blanditiis optio! Expedita consequuntur nesciunt fuga officiis soluta praesentium possimus nulla quod dolorum a deserunt iusto vitae illo, magni corporis est quos beatae quidem ipsa quisquam laboriosam quae et odio? Eveniet, fugit. Iste laboriosam temporibus quasi natus sunt ullam eveniet eos incidunt beatae blanditiis. Libero optio dolorum placeat et labore quia, laboriosam itaque molestias nisi, tempora eum dolore magnam neque cumque fugit quibusdam? Possimus doloremque expedita voluptates. Magni quaerat fuga maiores hic omnis, recusandae consequatur libero! Minus perspiciatis dignissimos temporibus porro, reprehenderit perferendis sit commodi eos quo facilis voluptates saepe tempora minima modi in hic a aut alias dolorum esse dolores tenetur!
+
+        </p>
+        
+    </div>
+    <div>
+        <h1 id="section2">goabout</h1>
+        <p>feugucyjbveuigbv</p>
+    </div>
+    <div>
+        <h1 id="section3">goform</h1>
+        <p>fevhvbccheoibehjhcvui</p>
+    </div>
+    
+    
+    
+    <p><s>ghuhrjbfirjg</s><del>bjuvbjrhjbvb</del><span>8ufvvhwb</span><sup>vubhvgvuv</sup><b>frug2gfgufvuvh</b></p>
+    <!-- Tempalte -->
+    <template id="myTemplate">
+        <h2>Hello World</h2>
+        <p>This is a pg</p>
+    </template>
+
+
+    <template id="parent">
+        <h1>Parent</h1>
+        <p>hvfrigwb </p>
+        <template id="child">
+            <h1>child</h1>
+            <p>gcgghb</p>
+        </template>
+    </template>
+</body>
+<script>
+    const data={
+        title:"This is a title",
+        description : "This is description"
+    }
+    // // target the parent template 
+    const parentTemp =document.getElementById("parent")
+    // get the content
+    const parentContent=parentTemp.content.cloneNode(true)    
+    
+    const childTemp=parentContent.querySelector("#child")
+    const childContent=childTemp.content.cloneNode("true")
+
+
+    parentContent.appendChild(childContent)
+    document.body.appendChild(parentContent)
+
+
+
+
+    const template=document.getElementById("myTemplate");
+    const content=template.content.cloneNode(true);
+    content.querySelector("h2").innerHTML=data.title
+    content.querySelector("p").innerHTML=data.description
+    document.body.appendChild(content) 
+    </script>
+</html>
