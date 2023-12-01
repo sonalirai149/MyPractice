@@ -100,6 +100,10 @@ button:hover{
     .grid-image{
         border-radius: 10px;
     }
+    .footer_container{
+        flex-direction: column;
+    }
+    
     
 }
 .features{
@@ -116,13 +120,14 @@ button:hover{
     padding:20px;
     transition:0.2s ease-in-out;
 }
+.feature img{
+    width:72px;
+}
 
 .feature_content{
     text-align: center;
 }
-.feature_img{
-    width:72px;
-}
+
 .feature:hover{
     box-shadow: 5px 5px 5px rgba(1,1,1,0.5);
     transition:0.2s ease-in-out;
@@ -219,6 +224,4 @@ footer{
     padding:5px 40px;
     margin-bottom: 10px;
 }
-.footer_container{
-    flex-direction: column;
-}
+
